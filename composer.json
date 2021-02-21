@@ -1,0 +1,33 @@
+{
+    "name": "lambda-platform/krud-ci",
+    "description": "Puzzle Visual Builder",
+    "type": "module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "n0m4dz",
+            "email": "tseegii.it@gmail.com"
+        },
+        {
+            "name": "munkh-altai",
+            "email": "munkaltai@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Krud\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Krud\\": "src"
+        }
+    },
+    "require": {
+        "php": "^7.3||^8.0"
+    },
+    "require-dev": {
+
+    }
+}
