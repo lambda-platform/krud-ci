@@ -14,6 +14,8 @@ $routes->group('lambda/krud', [
 
     $routes->post('(:any)/(:any)', 'KrudController::crud/$1/$2', []);
     $routes->post('(:any)/(:any)/(:any)', 'KrudController::crud/$1/$2/$3', []);
+
+    $routes->delete('delete/(:any)/(:any)', 'KrudController::delete/$1/$2', []);
 });
 
 
