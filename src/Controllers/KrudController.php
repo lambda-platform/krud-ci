@@ -28,5 +28,9 @@ class KrudController extends BaseController
 
         return $this->res(['status' => false]);
     }
+    public function fileUpload()
+    {
+        return $this->res(Dataform::upload());
+    }
 
 }

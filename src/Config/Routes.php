@@ -17,5 +17,13 @@ $routes->group('lambda/krud', [
 
     $routes->delete('delete/(:any)/(:any)', 'KrudController::delete/$1/$2', []);
 });
+$routes->group('lambda/krud', [
+    'namespace' => 'Krud\Controllers',
+
+], function (RouteCollection $routes) {
+
+    $routes->post('upload', 'KrudController::fileUpload', []);
+
+});
 
 
